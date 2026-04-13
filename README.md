@@ -4,6 +4,8 @@ Tired of filling in the same details over and over on the Udyam Registration web
 
 This tool adds **Save**, **Restore**, and **Clear** buttons directly on the Udyam registration page. Fill the form once, hit Save — and next time just hit Restore.
 
+![Form Saver panel on the Udyam Registration page](form_save_option.png)
+
 ---
 
 ## Step 1 — Install Tampermonkey
@@ -17,7 +19,18 @@ Tampermonkey is a free browser extension that lets you run small scripts on webs
 
 ---
 
-## Step 2 — Install This Script
+## Step 2 — Enable "Allow User Scripts" in Chrome
+
+> **Important:** Chrome requires this one-time setting for Tampermonkey scripts to work.
+
+1. In Chrome, go to this address in your browser bar: `chrome://extensions`
+2. Find **Tampermonkey** in the list and click **"Details"**
+3. Scroll down and turn on **"Allow user scripts"**
+4. Close the tab
+
+---
+
+## Step 3 — Install This Script
 
 1. Click the Tampermonkey icon in your Chrome toolbar
 2. Click **"Create a new script"**
@@ -29,7 +42,7 @@ Tampermonkey is a free browser extension that lets you run small scripts on webs
 
 ---
 
-## Step 3 — Use It
+## Step 4 — Use It
 
 1. Go to the [Udyam Registration website](https://www.udyamregistration.gov.in/UdyamRegistration.aspx)
 2. You will see a small **"Form Saver"** box in the **bottom-right corner** of the page
@@ -46,6 +59,35 @@ Tampermonkey is a free browser extension that lets you run small scripts on webs
 | 💾 **Save** | Saves everything you've filled in so far |
 | ♻️ **Restore** | Fills the form back with your saved details |
 | 🗑️ **Clear** | Deletes the saved details (start fresh) |
+
+---
+
+## After You Submit the Form
+
+> **Please clear your data once you're done.**
+
+Your saved details include sensitive information like your **Aadhaar number** and personal details. Once you have successfully submitted the form:
+
+1. Go back to the Udyam Registration page
+2. Click the **Clear** button in the Form Saver panel
+3. Your data will be permanently deleted from the browser
+
+This is a good habit — don't leave sensitive government data sitting in your browser longer than needed.
+
+---
+
+## Where is my data stored?
+
+Your data stays **only on your computer** — it is never uploaded or shared anywhere.
+
+Technically, it is stored inside Tampermonkey's private extension storage in Chrome. You can view or delete it manually at any time:
+
+> Tampermonkey icon → Dashboard → click **"Udyam Form Saver"** → go to the **Storage** tab
+
+The raw storage location on your Mac (binary, not human-readable):
+```
+~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/dhdgffkkebhmkfjojejmpbldmpobfkfo/
+```
 
 ---
 
